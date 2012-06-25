@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang='es'>
+<head>
+	<title>Preloader utilizando Create JS</title>
+	<style>
+		html
+		{
+			height:100%;
+		}
+		body
+		{
+			background-color:#333;
+			font-family:Arial,"Helvetica";
+		}
+		.mostrar
+		{
+			display: none;
+		}
+		#miCanvas
+		{
+			position: absolute;
+		}
+		#porcentaje
+		{
+			font-weight:bolder;
+			color:#FFF;
+			font-size:24px;
+			position: absolute;
+			z-index:10;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+	</style>
+	<script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+	<script src='preloadjs-0.1.0.min.js'></script>
+	<script src='mScript.js'></script>
+</head>
+<body>
+	<div id='preloader'>
+		<header>
+			<h1>Cargando</h1>
+		</header>
+		<canvas id='miCanvas' width='200' height='200'></canvas>
+		<span id='porcentaje'>0%</span>
+	</div>
+	<div id='wrapper'></div>
+</body>
+</html>
